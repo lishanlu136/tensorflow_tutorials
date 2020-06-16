@@ -26,6 +26,18 @@ with tf.Session() as sess:
     print(var_22.name)
     print(sess.run(var_22))
 
+"""
+name_var1:0
+[1.]
+example_test_name/name_var2:0
+[2.]
+example_test_name/name_var2_1:0
+[2.1]
+example_test_name/name_var2_2:0
+[2.2]
+
+"""
+
 v1 = tf.placeholder(tf.float32, shape=[1])
 print(v1.name)
 v1 = tf.placeholder(tf.float32, shape=[1], name='users')
